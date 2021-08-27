@@ -1,0 +1,11 @@
+.tip-calculator__grid {
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 539px) {
+  .tip-calculator__grid {
+    grid-template-columns: 48% 48%;
+  }
+}

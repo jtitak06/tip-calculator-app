@@ -1,0 +1,19 @@
+.tip-calculator__grid-button {
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'SpaceMono';
+    font-weight: 700;
+    padding: 2px;
+}
+
+.tip-calculator__grid-button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-calculator__grid-button:focus {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}

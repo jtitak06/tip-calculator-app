@@ -1,0 +1,16 @@
+.tip-calculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    max-width: 540px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 539px) {
+    .tip-calculator {
+        flex-direction: column;
+        margin: 0;
+    }
+}

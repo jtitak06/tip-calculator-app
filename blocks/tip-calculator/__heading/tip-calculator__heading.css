@@ -1,0 +1,7 @@
+.tip-calculator__heading {
+    color: hsl(0, 0%, 100%);
+    margin: 10px 0 0 10px;
+    font-family: 'SpaceMono', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}

@@ -1,0 +1,8 @@
+.tip-calculator__subtitle {
+    color: hsl(184, 14%, 56%);
+    font-family: 'SpaceMono', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    margin: 0 0 0 10px;
+}
+

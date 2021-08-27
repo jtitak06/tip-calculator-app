@@ -1,0 +1,17 @@
+.tip-calculator__output {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: hsl(183, 100%, 15%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 539px) {
+    .tip-calculator__output {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

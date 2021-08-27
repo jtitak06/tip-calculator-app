@@ -1,0 +1,14 @@
+.tip-calculator__grid-input {
+    background-color: hsl(189, 41%, 97%);
+    font-family: 'SpaceMono', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(183, 100%, 15%);
+    border: none;
+}
+
+@media screen and (max-width: 539px) {
+    .tip-calculator__grid-input {
+        width: auto;
+    }
+}

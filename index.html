@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="pages/index.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="page">
+    <img class="app-logo" src="./images/logo.svg" />
+    <div class="tip-calculator">
+      <div class="tip-calculator__bill">
+          <h1 class="tip-calculator__title">Bill</h1>
+            <input
+              class="tip-calculator__input tip-calculator__input_type_dollars"
+              placeholder="0"
+            />
+        <h2 class="tip-calculator__title">Select Tip %</h2>
+        <div class="tip-calculator__grid">
+          <button class="tip-calculator__grid-button" value="0.05">5%</button>
+          <button class="tip-calculator__grid-button" value="0.10">10%</button>
+          <button class="tip-calculator__grid-button" value="0.15">15%</button>
+          <button class="tip-calculator__grid-button" value="0.25">25%</button>
+          <button class="tip-calculator__grid-button" value="0.50">50%</button>
+          <input class="tip-calculator__grid-input" placeholder="Custom" />
+        </div>
+          <h2 class="tip-calculator__title">Number of People</h2>
+          <input
+            class="tip-calculator__input tip-calculator__input_type_people"
+            placeholder="0"
+          />
+      </div>
+      <div class="tip-calculator__output">
+        <form class="tip-calculator__total">
+          <div class="tip-calculator__wrapper">
+            <h3 class="tip-calculator__heading">Tip Amount</h3>
+            <p class="tip-calculator__subtitle">/ person</p>
+            </div>
+            <p class="tip-calculator__input_type_tip-amount"></p>
+        </form>
+        <div>
+          <form class="tip-calculator__total">
+            <div class="tip-calculator__wrapper">
+            <h3 class="tip-calculator__heading">Total</h3>
+            <p class="tip-calculator__subtitle">/ person</p>
+            </div>
+            <p class="tip-calculator__input_type_total"></p>
+          </form>
+        </div>
+        <button class="tip-calculator__reset">Reset</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jeff Titak</a>.
+    </div>
+  <script type="text/javascript" src="./pages/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.tip-calculator__input_type_tip-amount {
+    border: none;
+    font-family: 'SpaceMono', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    height: 30px;
+    width: 50%;
+    color: hsl(172, 67%, 45%);
+    background-color: hsl(183, 100%, 15%);
+    text-align: right;
+    margin-right: 5px;
+}

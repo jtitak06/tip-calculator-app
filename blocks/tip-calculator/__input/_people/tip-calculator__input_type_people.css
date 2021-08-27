@@ -1,0 +1,8 @@
+.tip-calculator__input_type_people {
+    background-image: url(../../../../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 5px;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}

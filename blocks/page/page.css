@@ -1,0 +1,10 @@
+.page {
+    background-color: hsl(185, 41%, 84%);
+}
+
+@media screen and (max-width: 539px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+    }
+}
