@@ -7,7 +7,11 @@ const TotalPeople = document.querySelector('.tip-calculator__input_type_people')
 
 // Calculate tip amount / person with grid buttons
 function CalculateTip() {
-TotalAmount.textContent = (GridButtons.value * TipAmount.value) / TotalPeople.value;
-console.log(TotalAmount.textContent);
+TipAmount.textContent = (GridButtons.value * TipAmount.value) / TotalPeople.value;
+
 }
+
+CalculateTip();
+
+TotalAmount.textContent = TipAmount.value / TotalPeople.value
 
