@@ -23,6 +23,7 @@
           <h1 class="tip-calculator__title">Bill</h1>
             <input
               class="tip-calculator__input tip-calculator__input_type_dollars"
+              type="number"
               placeholder="0"
             />
         <h2 class="tip-calculator__title">Select Tip %</h2>
@@ -32,11 +33,12 @@
           <button class="tip-calculator__grid-button" value="0.15">15%</button>
           <button class="tip-calculator__grid-button" value="0.25">25%</button>
           <button class="tip-calculator__grid-button" value="0.50">50%</button>
-          <input class="tip-calculator__grid-input" placeholder="Custom" />
+          <input class="tip-calculator__grid-input" type="number" placeholder="Custom" />
         </div>
           <h2 class="tip-calculator__title">Number of People</h2>
           <input
             class="tip-calculator__input tip-calculator__input_type_people"
+            type="number"
             placeholder="0"
           />
       </div>
@@ -57,7 +59,7 @@
             <p class="tip-calculator__input_type_total"></p>
           </form>
         </div>
-        <button class="tip-calculator__reset">Reset</button>
+        <button class="tip-calculator__reset" onclick="ClearInputs()">Reset</button>
       </div>
     </div>
     <div class="attribution">
