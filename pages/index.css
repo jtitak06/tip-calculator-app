@@ -8,6 +8,9 @@
 @import url(../blocks/tip-calculator/__input/tip-calculator__input.css);
 @import url(../blocks/tip-calculator/__input/_dollars/tip-calculator__input_type_dollars.css);
 @import url(../blocks/tip-calculator/__input/_people/tip-calculator__input_type_people.css);
+@import url(../blocks/tip-calculator/__input/_error/tip-calculator__input_type_error.css);
+@import url(../blocks/tip-calculator/__input/_green-border/tip-calculator__input_type_green-border.css);
+@import url(../blocks/tip-calculator/__input/_red-border/tip-calculator__input_type_red-border.css);
 @import url(../blocks/tip-calculator/__grid/tip-calculator__grid.css);
 @import url(../blocks/tip-calculator/__grid-button/tip-calculator__grid-button.css);
 @import url(../blocks/tip-calculator/__grid-input/tip-calculator__grid-input.css);

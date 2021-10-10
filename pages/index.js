@@ -1,29 +1,25 @@
 const GridButtons = document.querySelectorAll('.tip-calculator__grid-button');
 const GridInput = document.querySelector('.tip-calculator__grid-input');
 const TipAmount = document.querySelector('.tip-calculator__input_type_tip-amount');
-console.log(TipAmount);
 const TotalAmount = document.querySelector('.tip-calculator__input_type_total');
-console.log(TotalAmount);
 const BillAmount = document.querySelector('.tip-calculator__input_type_dollars');
 const TotalPeople = document.querySelector('.tip-calculator__input_type_people');
-const ResetButtton = document.querySelector('tip-calculator__reset');
+const ResetButtton = document.querySelector('.tip-calculator__reset');
 const Inputs = document.querySelectorAll('.tip-calculator__input');
-console.log(Inputs);
 let TipPercent = 0;
+
 let PeopleAmount = TotalPeople.value;
 let BillDollars = BillAmount.value;
+let GridField = GridInput.value;
+console.log(GridField)
 let Tip = '';
 
 
 function CalculateTotal() {
-    console.log("Tip Calculate")
     console.log( parseFloat(Tip) + parseFloat(BillDollars))
-    TotalAmount.textContent = "$" + Math.round( (( ( parseFloat( Tip ) + parseFloat( BillDollars ) ) / PeopleAmount ) * 100)) / 100;
+    TotalAmount.textContent = "$" + (Math.round( (( ( parseFloat( Tip ) + parseFloat( BillDollars ) ) / PeopleAmount ) * 100)) / 100).toFixed(2);
 
 }
-
-
-//TotalAmount.textContent = parseInt(TipAmount.value) / parseInt(TotalPeople.value)
 
 // Calculate tip amount / person with grid buttons
 function CalculateTip() {
@@ -31,9 +27,11 @@ console.log("CalculateTip()")
 Tip = (TipPercent * BillDollars) / PeopleAmount;
 console.log(Tip);
 
-TipAmount.textContent = "$" + ((Tip * 100) / 100);
+TipAmount.textContent = "$" + ((Tip * 100) / 100).toFixed(2);
 CalculateTotal();
 }
+
+
 
 function CheckForValues() {
     console.log("CheckForValues()")
@@ -44,6 +42,9 @@ function CheckForValues() {
     }  
 
 }
+
+
+
 
 function HandleGridButtonClick(event) {
     TipPercent = parseFloat(event.target.value);
@@ -71,7 +72,7 @@ GridButtons.forEach( function (GridButton) {
 TotalPeople.addEventListener('change', HandleTotalPeopleInput);
 BillAmount.addEventListener('change', HandleBillAmountInput);
 
-CalculateTip();
+//CalculateTip();
 
 //TotalAmount.textContent = parseInt(TipAmount.value) / parseInt(TotalPeople.value)
 
@@ -79,15 +80,27 @@ CalculateTip();
 function ClearInputs() {
     BillAmount.value = '';
     TotalPeople.value = '';
-    //TipAmount.value = '';
-    //TotalAmount.value = '';
+    TipAmount.textContent = '$0';
+    TotalAmount.textContent = '$0';
 }
 
 
+function InputBorder() {
+if (TotalPeople.value === 0 || TotalPeople.value === ""){
+    console.log("No one wants to eat lunch with me :(")
+    //TotalPeople.classList.add(".tip-calculator__input_type_red-border");
+}  // else {
+    //TotalPeople.classList.remove(".tip-calculator__input_type_red-border");
+   // TotalPeople.classList.add(".tip-calculator__input_type_green-border");
+}//};
+
+InputBorder();
+
 //Reset Button
-ResetButtton.addEventListener('submit', (event) => {
-    let messages = [];
-    if (TotalPeople.value === 0 || TotalPeople.value === "") {
-        messages.push("Can't be zero")
-    }
-})
+//ResetButtton.addEventListener("click", (event) => {
+    //console.log("EventListener Clicked")
+    //let messages = [];
+    //if (TotalPeople.value === 0 || TotalPeople.value === "") {
+        //messages.push("Can't be zero")
+    //}
+//});

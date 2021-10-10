@@ -1,0 +1,7 @@
+.tip-calculator__input_type_error {
+    color: hsl(0, 100%, 50%);
+    font-family: 'SpaceMono', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    visibility: hidden;
+}

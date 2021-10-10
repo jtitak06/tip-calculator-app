@@ -5,6 +5,9 @@
     font-size: 18px;
     width: 90%;
     display: block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
 }
 
 @media screen and (max-width: 539px) {

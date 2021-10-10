@@ -22,8 +22,7 @@
       <div class="tip-calculator__bill">
           <h1 class="tip-calculator__title">Bill</h1>
             <input
-              class="tip-calculator__input tip-calculator__input_type_dollars"
-              type="number"
+              class="tip-calculator__input tip-calculator__input_type_dollars tip-calculator__input_type_green-border"
               placeholder="0"
             />
         <h2 class="tip-calculator__title">Select Tip %</h2>
@@ -33,12 +32,11 @@
           <button class="tip-calculator__grid-button" value="0.15">15%</button>
           <button class="tip-calculator__grid-button" value="0.25">25%</button>
           <button class="tip-calculator__grid-button" value="0.50">50%</button>
-          <input class="tip-calculator__grid-input" type="number" placeholder="Custom" />
+          <input class="tip-calculator__grid-input" placeholder="Custom" />
         </div>
-          <h2 class="tip-calculator__title">Number of People</h2>
+          <h2 class="tip-calculator__title">Number of People<span class="tip-calculator__input_type_error">Can't be zero</span></h2>
           <input
             class="tip-calculator__input tip-calculator__input_type_people"
-            type="number"
             placeholder="0"
           />
       </div>
@@ -48,7 +46,7 @@
             <h3 class="tip-calculator__heading">Tip Amount</h3>
             <p class="tip-calculator__subtitle">/ person</p>
             </div>
-            <p class="tip-calculator__input_type_tip-amount"></p>
+            <p class="tip-calculator__input_type_tip-amount">$0</p>
         </form>
         <div>
           <form class="tip-calculator__total">
@@ -56,7 +54,7 @@
             <h3 class="tip-calculator__heading">Total</h3>
             <p class="tip-calculator__subtitle">/ person</p>
             </div>
-            <p class="tip-calculator__input_type_total"></p>
+            <p class="tip-calculator__input_type_total">$0</p>
           </form>
         </div>
         <button class="tip-calculator__reset" onclick="ClearInputs()">Reset</button>
